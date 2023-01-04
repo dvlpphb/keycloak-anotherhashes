@@ -6,16 +6,18 @@
 
     <groupId>com.keenetic.account</groupId>
     <artifactId>keycloak-anotherhashes</artifactId>
-    <version>1.2</version>
+    <version>20.0.2</version>
 
     <properties>
         <!-- Maven -->
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <maven.compiler.source>1.8</maven.compiler.source>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
 
         <!-- Dependencies -->
         <jboss.logging.version>3.3.1.Final</jboss.logging.version>
-        <keycloak.version>19.0.3</keycloak.version>
+        <keycloak.version>20.0.2</keycloak.version>
+        <bouncycastle.bcpkix.version>1.70</bouncycastle.bcpkix.version>
     </properties>
 
     <dependencies>
@@ -64,7 +66,7 @@
         <dependency>
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcpkix-jdk15on</artifactId>
-            <version>1.60</version>
+            <version>${bouncycastle.bcpkix.version}</version>
         </dependency>
 
     </dependencies>
